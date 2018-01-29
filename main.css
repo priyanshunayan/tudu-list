@@ -1,0 +1,116 @@
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Page styling */
+html{
+	font-size: 16px;
+}
+
+header h1 {
+	font-size: 3rem;
+	letter-spacing: 3px;
+	font-family: Calibri, Arial, sans-serif;
+	background: #cc0011;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+}
+
+.input {
+	background: black;
+	color: white;
+	font-family: Calibri, Arial, sans-serif;
+	padding: 3rem;
+	height: auto;
+	text-align: center;
+}
+
+.input h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+#content {
+	background: #cc0011;
+	font-size: 1.5rem;
+	font-family: "monotype corsiva", sans-serif;
+	padding-left: 1rem;
+	padding-top: 1rem;
+	color: white;
+}
+
+.hidden {
+	display: none;
+}
+.red {
+	color: red;
+}
+.strike {
+	text-decoration: line-through;
+}
+
+#inputItem {
+	font-size: 1.2rem;
+}
+button {
+	background-color: #cc0011;
+	color: white;
+	border: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100px;
+	margin-left: 1rem; 
+	font-size: 1.4rem;
+	display: inline;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#content button {
+	background-color: black;
+	
+}
