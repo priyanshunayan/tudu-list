@@ -2,24 +2,26 @@
 <html>
 <head>
 	<title>tudu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Slabo+27px" rel="stylesheet">
 
 </head>
 <body>
 <header>
 	<h1>tudu</h1>
+	<h3>A simple and elegant to-do list</h3>
 </header>
 <div class="input">
 	<h2>Add an item</h2>
-	<input type="text" name="text" id="inputItem" size="80">
-	<button onclick="addItem()">Add</button>
+	<input type="text" name="text" id="inputItem"  onkeypress="handle(event)" autofocus>
+	<button onclick="addItem()" id="addBtn">Add</button>
 </div>
 <div>
 	<ul  id="content">
 		
 	</ul>
 </div>
-<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

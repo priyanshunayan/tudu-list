@@ -49,20 +49,23 @@ table {
 html{
 	font-size: 16px;
 }
-
+input {
+	width: 60%;
+}
 header h1 {
 	font-size: 3rem;
 	letter-spacing: 3px;
 	font-family: Calibri, Arial, sans-serif;
-	background: #cc0011;
 	padding: 1rem;
 	text-align: center;
-	color: white;
+	color: #0077cc;
 }
-
+header h3 {
+	text-align: center;
+	font-variant: small-caps;
+	color: #005da0;
+}
 .input {
-	background: black;
-	color: white;
 	font-family: Calibri, Arial, sans-serif;
 	padding: 3rem;
 	height: auto;
@@ -75,12 +78,15 @@ header h1 {
 }
 
 #content {
-	background: #cc0011;
 	font-size: 1.5rem;
-	font-family: "monotype corsiva", sans-serif;
+	font-family: 'Slabo 27px',"Times New Roman", serif;
 	padding-left: 1rem;
 	padding-top: 1rem;
-	color: white;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: space-between;
+	flex-direction: column;
 }
 
 .hidden {
@@ -97,7 +103,7 @@ header h1 {
 	font-size: 1.2rem;
 }
 button {
-	background-color: #cc0011;
+	background:#0077cc;
 	color: white;
 	border: none;
 	padding-left: 1rem;
@@ -108,9 +114,30 @@ button {
 	display: inline;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	border-radius: 2px;
+	cursor: pointer;
+	font-family: 'Roboto Slab', serif;
 }
 
+button:hover {
+	background-color: #005da0;
+}
 #content button {
-	background-color: black;
-	
+	background-color:#0077cc;
+	color: white;	
+
+}
+#content button:hover {
+	background-color: #005da0;
+}
+#content li {
+}
+
+@media only screen and (max-width:600px) {
+	input{
+		width: 50%;
+	}
+	#content li {
+		margin-right: 0 10px;
+	}
 }
