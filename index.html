@@ -14,8 +14,8 @@
 </header>
 <div class="input">
 	<h2>Add an item</h2>
-	<input type="text" name="text" id="inputItem"  onkeypress="handle(event)" autofocus>
-	<button onclick="addItem()" id="addBtn">Add</button>
+	<input type="text" name="text" id="inputItem"  onkeypress="handle(event)" onkeyup="stoppedTyping()" autofocus>
+	<button onclick="addItem()" id="addBtn" type="submit">Add</button>
 </div>
 <div>
 	<ul  id="content">

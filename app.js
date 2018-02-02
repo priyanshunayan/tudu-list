@@ -24,10 +24,14 @@ function addItem() {
 	// to reset the value of input element.
 	document.getElementById('inputItem').value = "";
 	 if (toAdd==="") {
-	 	document.getElementById("content").innerHTML = "Checking if it works or not? Smart? <br><br>Go refresh the page as a punishment!"
+	 	document.getElementById("content").innerHTML = "Checking if it works or not? Smart? <br><br>Go reload the page as a punishment!"
+	 	document.getElementById('inputItem').disabled = true;
 	 } else{
 	 	return;
 	 }
+
+
+	
 }
 
 // to create the same effect by pressing 'enter' and clicking 'add'...
@@ -35,8 +39,12 @@ function addItem() {
 		if(e.keyCode===13) {
 			addItem();
 		} else {
-			return;
+			return;9
 		}
 	}
-
+// to confirm if the user wants to reload.
+	window.onbeforeunload = function()
+        {
+        	return "";
+        };
 
