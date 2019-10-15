@@ -1,2 +1,2 @@
 # tudu-list
-A simple and elegant To-Do list.
+A simple and elegant TO-DO list.
